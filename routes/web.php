@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/{any?}', function (){
+    return view('app');
+})->where('any', '^(?!api\/)[\/\w\.-]*');
+
+Route::fallback(function () {
+    return response()->json([
+        'message' => 'Page Not Found'
+    ], 404);
 });
