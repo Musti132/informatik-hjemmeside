@@ -25,7 +25,7 @@ yarn install
 mv .env.example .env
 ```
 
-Install database
+Migrate the database
 
 ```bash
 php artisan migrate --seed
