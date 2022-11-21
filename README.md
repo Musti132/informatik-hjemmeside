@@ -16,10 +16,10 @@ php artisan key:generate
 
 Remember to set your database information in .env file.
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies
 
 ```bash
-1 .cd informatik-hjemmeside
+cd informatik-hjemmeside
 composer install
 yarn install
 mv .env.example .env
@@ -27,6 +27,6 @@ mv .env.example .env
 
 Install database
 
-```sh
+```bash
 php artisan migrate --seed
 ```
