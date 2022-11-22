@@ -15,13 +15,14 @@ class Product extends Model
         'slug',
         'price',
     ];
-    
+
     public function categories()
     {
         return $this->belongsToMany(Category::class);
     }
 
-    public function image(){
+    public function image()
+    {
         return $this->hasOne(ProductImage::class);
     }
 }

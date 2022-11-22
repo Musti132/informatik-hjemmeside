@@ -6,22 +6,27 @@ import PersonalDataPolicy from './pages/PersonalDataPolicy.vue';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
-    { 
-        path: '/', component: Home
+    {
+        path: "/",
+        component: Home,
     },
     {
-        path: '/about', About
+        path: "/about",
+        component: About,
     },
     {
-        path: '/contact', Contact
+        path: "/contact",
+        component: Contact,
     },
     {
-        path: '/products', component: Products
+        path: "/products",
+        component: Products,
     },
     {
-        path: '/personal-data-policy', component: PersonalDataPolicy
+        path: "/personal-data-policy",
+        component: PersonalDataPolicy,
     },
-]
+];
 const router = new createRouter({
     history: createWebHistory(),
     routes

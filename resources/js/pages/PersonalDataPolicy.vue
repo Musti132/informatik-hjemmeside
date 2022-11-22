@@ -6,7 +6,7 @@
         and other individuals with whom we interact. </p><v-spacer></v-spacer><p>2. Data Protection
         Principles We will comply with the eight data protection principles when
         handling personal data: a) Personal data must be processed lawfully,
-        fairly and in a transparent manner. b) 
+        fairly and in a transparent manner. b)
         <v-spacer></v-spacer>
         <p>Personal data must be collected for specified, explicit and legitimate purposes and not further
         processed in a way that is incompatible with those purposes. c) Personal
@@ -15,7 +15,7 @@
         must be accurate and, where necessary, kept up to date. Every reasonable
         step must be taken to ensure that personal data that is inaccurate,
         having regard to the purposes for which it is processed, is erased or
-        rectified without delay. e) </p> 
+        rectified without delay. e) </p>
         <v-spacer></v-spacer><p>Personal data must be kept in a form which
         permits identification of data subjects for no longer than is necessary
         for the purposes for which the personal data is processed. Personal data

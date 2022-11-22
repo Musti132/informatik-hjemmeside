@@ -31,12 +31,12 @@
     </v-row>
 
     <!-- Create A load more button -->
-    <div class="pt-2" align="right" v-if="currentPage != lastPage"> 
+    <div class="pt-2" align="right" v-if="currentPage != lastPage">
         <v-btn
             v-if="products.length > 0"
             color="primary"
             class="mx-auto"
-            @click="loadMore"
+            @click="fetchProducts"
         >
             Load More
         </v-btn>
@@ -46,10 +46,9 @@
 export default {
     mounted() {
         this.fetchProducts();
-        console.log("Products mounted.");
     },
     data: () => ({
-        products: {},
+        products: [],
         currentPage: 0,
         nextPage: null,
         lastPage: null,
@@ -59,20 +58,6 @@ export default {
         fetchProducts() {
             this.axios
                 .get("/api/products")
-                .then((response) => {
-                    this.products = response.data.data;
-                    this.currentPage = response.data.current_page;
-                    this.nextPage = response.data.next_page_url;
-                    this.lastPage = response.data.last_page;
-                })
-                .catch((error) => {
-                    console.log(error);
-                });
-        },
-
-        loadMore() {
-            this.axios
-                .get(this.nextPage)
                 .then((response) => {
                     this.products = this.products.concat(response.data.data);
                     this.currentPage = response.data.current_page;
