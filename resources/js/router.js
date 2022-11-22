@@ -2,6 +2,7 @@ import Home from './pages/Home.vue';
 import About from './pages/About.vue';
 import Contact from './pages/Contact.vue';
 import Products from './pages/Products.vue';
+import PersonalDataPolicy from './pages/PersonalDataPolicy.vue';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -9,13 +10,16 @@ const routes = [
         path: '/', component: Home
     },
     {
-        path: '/about', component: () => import('./pages/About.vue')
+        path: '/about', About
     },
     {
-        path: '/contact', component: () => import('./pages/Contact.vue')
+        path: '/contact', Contact
     },
     {
-        path: '/products', component: () => import('./pages/Products.vue')
+        path: '/products', component: Products
+    },
+    {
+        path: '/personal-data-policy', component: PersonalDataPolicy
     },
 ]
 const router = new createRouter({

@@ -1,9 +1,8 @@
 <template>
     <v-layout>
         <Menu></Menu>
-
         <v-main>
-            <v-container>
+            <v-container fluid>
                 <router-view></router-view>
             </v-container>
         </v-main>
@@ -24,10 +23,8 @@ export default {
     }),
 };
 </script>
-
-<style lang="scss" scoped>
-  .v-main {
-        --v-layout-left: 0 !important;
+<style>
+    .text-h2 {
+        margin-bottom: 10px;
     }
-  
 </style>
